@@ -8,7 +8,7 @@ import (
 
 const (
 	crossplanClaimNamespace = "crossplane.io/claim-namespace"
-	OriginNamespaceNotFound = "origin namespace not found because no label set"
+	originNamespaceNotFound = "origin namespace not found because no label set"
 )
 
 // GetTopicOrigin will look for labels tracing origin namespace of resource
@@ -17,5 +17,5 @@ func getTopicOriginNamespace(t topicv1alpha1.Topic) (string, error) {
 	if ns, exists := labels[crossplanClaimNamespace]; exists {
 		return ns, nil
 	}
-	return "", errors.New(OriginNamespaceNotFound)
+	return "", errors.New(originNamespaceNotFound)
 }

@@ -50,7 +50,7 @@ kind: Topic
 metadata:
   name: confluent-test
   labels:
-    crossplane.io/claim-namespace=default
+    crossplane.io/claim-namespace: default
 spec:
   forProvider:
     cluster: abc-00000

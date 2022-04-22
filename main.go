@@ -24,6 +24,7 @@ import (
 	// to ensure that exec-entrypoint and run can make use of them.
 	"github.com/dfds/crossplane-confluent-operator/controllers"
 	topicv1alpha1 "github.com/dfds/provider-confluent/apis/topic/v1alpha1"
+
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 
 	"k8s.io/apimachinery/pkg/runtime"

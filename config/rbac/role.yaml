@@ -13,3 +13,11 @@ rules:
   - get
   - list
   - watch
+- apiGroups:
+  - v1
+  resources:
+  - secret
+  verbs:
+  - get
+  - list
+  - watch

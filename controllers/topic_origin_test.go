@@ -18,7 +18,7 @@ func TestGetTopicOriginNamespace(t *testing.T) {
 
 	// No label
 	ns, err := getTopicOriginNamespace(topic)
-	assert.EqualError(err, OriginNamespaceNotFound, "expected origin namespace not found")
+	assert.EqualError(err, originNamespaceNotFound, "expected origin namespace not found")
 	assert.Equal("", ns, "when namespace is not found it should be empty string")
 
 	// With label
