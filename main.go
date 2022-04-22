@@ -82,7 +82,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	if err = (&controllers.TopicPrereqsReconciler{
+	if err = (&controllers.TopicReconciler{
 		Client: mgr.GetClient(),
 		Scheme: mgr.GetScheme(),
 	}).SetupWithManager(mgr); err != nil {

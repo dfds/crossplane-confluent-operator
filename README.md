@@ -49,6 +49,8 @@ apiVersion: kafka.confluent.crossplane.io/v1alpha1
 kind: Topic
 metadata:
   name: confluent-test
+  labels:
+    crossplane.io/claim-namespace=default
 spec:
   forProvider:
     cluster: abc-00000
